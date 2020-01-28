@@ -1,0 +1,123 @@
+html {
+  font-family: 'Josefin Sans', sans-serif; }
+
+.estilo-h1 {
+  font-weight: bold;
+  font-size: 24px;
+  font-style: italic;
+  color: #2a2726;
+  text-align: center;
+  text-decoration-line: underline; }
+
+.estilo-h2 {
+  color: #5F5957;
+  font-size: 18px;
+  text-align: center; }
+
+.sub-h2 {
+  color: #938c89;
+  text-align: justify; }
+
+.estilo-contacto {
+  color: #5F5957;
+  font-size: 18px;
+  line-height: 1.5; }
+
+.sub-contacto {
+  color: #938c89;
+  text-decoration-line: underline; }
+
+.sub-menu {
+  text-decoration: none;
+  color: #938c89; }
+
+.menu {
+  text-decoration: none;
+  color: #919C40;
+  line-height: 3.5; }
+
+.footer {
+  color: #938c89; }
+
+#lista {
+  line-height: 1.5; }
+  #lista ul {
+    color: #919C40; }
+    #lista ul li {
+      color: #2a2726; }
+      #lista ul li div ul {
+        color: #938c89; }
+
+aside {
+  text-align: center; }
+
+body {
+  background-color: #B23921; }
+
+#grids {
+  display: grid;
+  grid-template-areas: "nav titulo titulo"
+ "nav h2 publicidad"
+ "nav lista publicidad"
+ "nav pieDePagina pieDePagina";
+  grid-template-rows: 100px 1fr 1fr 75px;
+  grid-template-columns: 20% auto 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0; }
+
+#grids-nos {
+  display: grid;
+  grid-template-areas: "nav titulo titulo"
+ "nav h2 publicidad"
+ "nav h2 publicidad"
+ "nav pieDePagina pieDePagina";
+  grid-template-rows: 100px 1fr 1fr 75px;
+  grid-template-columns: 20% auto 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0; }
+
+#grids-404 {
+  display: grid;
+  grid-template-areas: "nav titulo titulo"
+ "nav cuerpo cuerpo"
+ "nav cuerpo cuerpo"
+ "nav pieDePagina pieDePagina";
+  grid-template-rows: 100px 1fr 1fr 75px;
+  grid-template-columns: 20% auto 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0; }
+
+header, footer, section, nav, aside {
+  padding: 1.2em;
+  background: #F1C40F; }
+
+header {
+  grid-area: titulo; }
+
+footer {
+  grid-area: pieDePagina; }
+
+#cuerpo {grid-area: cuerpo;}
+
+section {
+  background-color: #f7dc6f; }
+  section #h2 {
+    grid-area: h2; }
+  section #lista {
+    grid-area: lista; }
+
+nav {
+  grid-area: nav; }
+
+aside {
+  grid-area: publicidad; }
+
+footer div a {
+  justify-content: space-around;
+  align-content: center; }
